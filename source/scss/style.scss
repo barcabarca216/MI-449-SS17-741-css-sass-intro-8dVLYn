@@ -1,0 +1,110 @@
+$primary-color: #a37b73;
+$t-color: #dbbea1;
+$th-color: #db7f67;
+$thh-color: #3f292b;
+$ty-color: #d34f73;
+$border-radius: 20px;
+$border: 4px;
+
+a {
+  color: $ty-color;
+  background-color: lighten($th-color, 50%);
+  text-decoration: none;
+  $border-radius: 20px;
+  $border: 4px;
+}
+
+button {
+  color: $t-color;
+  border-color: $th-color;
+  background-color: lighten($t-color, 50%);
+  $border-radius: 20px;
+  $border: 4px;
+}
+
+p {
+  color: $t-color;
+}
+
+$serif-fonts: Georgia, Cambria, "Times New Roman", serif;
+$font-base-size: 20px;
+
+body {
+  font-family: $serif-fonts;
+  font-size: $font-base-size;
+}
+
+input {
+  font-family: $serif-fonts;
+  font-size: $font-base-size;
+  color: $ty-color;
+  background-color: darken($ty-color, 50%);
+  border-radius: $border-radius;
+}
+
+img {
+  border-radius: $border-radius;
+}
+
+label {
+  font-family: $serif-fonts;
+  font-size: $font-base-size;
+  color: $th-color;
+  border-radius: $border-radius;
+  background-color: lighten($ty-color, 25%);
+}
+
+textarea {
+  font-family: $serif-fonts;
+  font-size: $font-base-size;
+  color: $th-color;
+  border-radius: $border-radius;
+}
+
+h1 {
+  font-family: $serif-fonts;
+  font-size: $font-base-size * 2.25;
+  color: $th-color;
+}
+
+h2 {
+  font-family: $serif-fonts;
+  font-size: $font-base-size * 2;
+  color: $thh-color;
+}
+
+h3 {
+  font-family: $serif-fonts;
+  font-size: $font-base-size * 1.75;
+  color: $ty-color;
+}
+
+h4 {
+  font-family: $serif-fonts;
+  font-size: $font-base-size * 1.5;
+  color: $thh-color;
+}
+
+h5 {
+  font-family: $serif-fonts;
+  font-size: $font-base-size * 1.25;
+  color: $th-color;
+}
+
+h6 {
+  font-family: $serif-fonts;
+  font-size: $font-base-size * 1;
+  color: $t-color;
+}
+
+tr {
+  font-family: $serif-fonts;
+  font-size: $font-base-size;
+  color: $th-color;
+}
+
+figcaption {
+  font-family: $serif-fonts;
+  font-size: $font-base-size;
+  color: $ty-color;
+}
