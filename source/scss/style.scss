@@ -1,30 +1,4 @@
-$primary-color: #a37b73;
-$t-color: #dbbea1;
-$th-color: #db7f67;
-$thh-color: #3f292b;
-$ty-color: #d34f73;
-$border-radius: 20px;
-$border: 4px;
-
-a {
-  color: $ty-color;
-  background-color: lighten($th-color, 50%);
-  text-decoration: none;
-  $border-radius: 20px;
-  $border: 4px;
-}
-
-button {
-  color: $t-color;
-  border-color: $th-color;
-  background-color: lighten($t-color, 50%);
-  $border-radius: 20px;
-  $border: 4px;
-}
-
-p {
-  color: $t-color;
-}
+@import "_variables";
 
 $serif-fonts: Georgia, Cambria, "Times New Roman", serif;
 $font-base-size: 20px;
@@ -32,26 +6,45 @@ $font-base-size: 20px;
 body {
   font-family: $serif-fonts;
   font-size: $font-base-size;
-}
 
-input {
-  font-family: $serif-fonts;
-  font-size: $font-base-size;
-  color: $ty-color;
-  background-color: darken($ty-color, 50%);
-  border-radius: $border-radius;
+  .p {
+    color: $t-color;
+
+    .input {
+      color: $ty-color;
+      background-color: darken($ty-color, 50%);
+      border-radius: $border-radius;
+
+      .button {
+        color: $t-color;
+        border-color: $th-color;
+        background-color: lighten($t-color, 50%);
+        $border-radius: 20px;
+        $border: 4px;
+      }
+
+      .radio {
+        color: $th-color;
+      }
+
+      .a {
+        color: $ty-color;
+        text-decoration: none;
+        $border-radius: 20px;
+        $border: 4px;
+      }
+
+      .label {
+        color: $th-color;
+        border-radius: $border-radius;
+        background-color: lighten($ty-color, 25%);
+      }
+    }
+  }
 }
 
 img {
   border-radius: $border-radius;
-}
-
-label {
-  font-family: $serif-fonts;
-  font-size: $font-base-size;
-  color: $th-color;
-  border-radius: $border-radius;
-  background-color: lighten($ty-color, 25%);
 }
 
 textarea {
