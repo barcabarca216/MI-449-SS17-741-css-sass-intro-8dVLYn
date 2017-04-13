@@ -1,38 +1,35 @@
 @import "_variables";
 
-$serif-fonts: Georgia, Cambria, "Times New Roman", serif;
-$font-base-size: 20px;
-
 body {
   font-family: $serif-fonts;
   font-size: $font-base-size;
+}
 
-  p {
-    color: $th-color;
+p {
+  color: $th-color;
+}
+
+input {
+  color: $ty-color;
+  background-color: darken($ty-color, 50%);
+  border-radius: $border-radius;
+
+  button {
+    color: $t-color;
+    border-color: $th-color;
+    background-color: lighten($th-color, 50%);
+    $border-radius: 20px;
+    $border: 4px;
   }
 
-  input {
-    color: $ty-color;
-    background-color: darken($ty-color, 50%);
+  label {
+    color: $th-color;
     border-radius: $border-radius;
+    background-color: lighten($ty-color, 25%);
+  }
 
-    button {
-      color: $t-color;
-      border-color: $th-color;
-      background-color: lighten($th-color, 50%);
-      $border-radius: 20px;
-      $border: 4px;
-    }
-
-    label {
-      color: $th-color;
-      border-radius: $border-radius;
-      background-color: lighten($ty-color, 25%);
-    }
-
-    .radio {
-      color: $th-color;
-    }
+  .radio {
+    color: $th-color;
   }
 }
 
